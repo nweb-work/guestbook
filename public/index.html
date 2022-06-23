@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guestbook</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Guestbook</h1>
+        <form action="" id="guestbook" class="form">
+            <label for="name">Имя:</label>
+            <br>
+            <input type="text" id="name" class="name">
+            <br><br>
+            <label for="name">E-mail:</label>
+            <br>
+            <input type="email" id="email" class="email">
+            <br><br>
+            <label for="text">Сообщение:</label>
+            <br>
+            <textarea name="text" id="text" class="text" cols="30" rows="10"></textarea>
+            <br><br>
+            <input type="submit" class="submit" value="Отправить">
+        </form>
+        <div class="message"></div>
+
+        <div class="posts"></div>
+    </div>
+    <script>
+        Guestbook.init({
+            form: '.form',
+            name: '.name',
+            email: '.email',
+            text: '.text',
+            submit: '.submit',
+            message: '.message',
+            posts: '.posts'
+        });
+    </script>
+</body>
+</html>

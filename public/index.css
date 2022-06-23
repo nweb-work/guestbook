@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    min-width: 320px;
+    width: 768px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    min-width: 320px;
+    width: 320px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+.message {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.post__name,
+.post__date
+{
+    margin-bottom: 5px;
+}
+
+.pagenav {
+    text-align: center;
+}
